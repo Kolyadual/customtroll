@@ -1,0 +1,8 @@
+Package: customtroll
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Kolyadual <kolyadual.man@gmail.com>
+Depends: chafa, libc6 (>= 2.14)
+Description: This is customtroll ;)

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+BASE_PATH="/usr/share/customtroll"
+
+case "$1" in
+    "rickroll")
+        FILE="$BASE_PATH/rickroll-roll.gif"
+        ;;
+    "mge2")
+        FILE="$BASE_PATH/mge2.gif"
+        ;;
+    "pennywise")
+        FILE="$BASE_PATH/pennywise.gif"
+        ;;
+    "know")
+        FILE="$BASE_PATH/know.gif"
+        ;;
+    "mge")
+        FILE="$BASE_PATH/mge.gif"
+        ;;
+    *)
+        echo "Какой мем сегодня? sudo customtroll [rickroll | mge]"
+        exit 1
+        ;;
+esac
+
+# Проверка, существует ли файл
+if [ -f "$FILE" ]; then
+    # Запускаем chafa на весь размер терминала
+    chafa "$FILE"
+else
+    echo "Ошибка: Файл $FILE не найден."
+    exit 1
+fi
