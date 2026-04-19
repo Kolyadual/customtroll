@@ -19,3 +19,6 @@
 И запускаем:
 
     sudo customtroll rickroll
+
+
+## Внимание! customtroll может не работать/работать плохо из TTY
